@@ -1,0 +1,175 @@
+nav, footer{
+    background-color: rgb(95, 95, 95);
+}
+
+#link_home {
+    color: white;
+}
+
+#link_home:hover {
+    color: rgb(223, 219, 219);
+}
+
+section {
+    width: 100%;
+    padding: 30px 50px;
+    clear: both;
+    overflow: auto;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+}
+
+section#lancamentos>div>article {
+    padding: 20px 0px 0px 30px;
+    width: 45%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    clear: both;
+}
+
+div.aside>article {
+    border-bottom: solid 1px black;
+    margin-top: 15px;
+}
+
+div.aside>img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+section>div.aside {
+    border-right: solid 1px black;
+    padding-right: 20px;
+}
+
+aside#posterMaximo>img {
+    max-height: 100vh;
+    width: auto;
+    max-width: 50vw;
+}
+
+#divDetalheFilme>article {
+    margin: 20px;
+}
+
+#divDetalheFilme {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    float: left;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgb(179, 179, 179);
+}
+
+.container {
+    width: 100%;
+}
+
+i {
+    margin: 4px;
+}
+
+.poster>img {
+    margin: 10px 0px;
+}
+
+.poster>.card-img-top {
+    filter: brightness(110%);
+}
+
+.poster>.card-img-top:hover {
+    filter: brightness(80%);
+}
+
+div.card-deck>div.card {
+    margin: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+.cor1:first-of-type {
+    background: rgb(231, 231, 231)
+}
+
+.cor1 {
+    background: rgb(168, 168, 168);
+}
+
+@media screen and (max-width: 700px) {
+    section {
+        padding: 20px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    section#lancamentos>div>article {
+        padding-left: 0px;
+        width: 80%;
+    }
+
+    .aside {
+        width: 100%;
+        padding: 5px;
+        clear: both;
+    }
+
+    section>div.aside {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    section>aside {
+        background: rgb(241, 241, 241);
+        padding: 15px !important;
+    }
+
+    aside#posterMaximo>img {
+        max-height: 90vh;
+        width: auto;
+    }
+    
+    #divDetalheFilme {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

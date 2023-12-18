@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--Main-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Portal de filmes</title>
+    <!-- Script -->
+        <!-- Bootstrap v4.0 -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+        <!-- Main -->
+        <script src="js/main.js" defer></script>
+        <script src="js/home.js" defer></script>
+</head>
+
+<body onload="mostraFilmes()">
+    <!--Barra de navegação-->
+    <nav class="navbar navbar-expand-lg text-white">
+        <img class="navbar-brand" id="logo" src="img/logo.png" alt="Logo">
+        <button class="navbar-toggler btn btn-outline-light my-2 my-sm-0" type="button" data-toggle="collapse" data-target="#navegacao" aria-controls="navegacao" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navegacao">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#lancamentos">Lançamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#destaques">Destaques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#avaliacoes">Avaliações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#avaliacoes">Curiosidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#novidades">Novidades</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="pesquisa" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <!--CAROUSEL-->
+        <section id="lancamentos" class="cor1">
+            <h2>Lançamentos</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md py-2">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IQaP0hYraMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md py-2">
+                                <article>
+                                    <h3>The Batman</h3>
+                                    <p>Sinopse: Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população. <br><br>
+                                    <strong>Diretor:</strong> Matt Reeves <strong>Roteiro:</strong> Matt Reeves, Peter Craig <strong>Estreia:</strong> 2022 <br> <strong>Elenco:</strong> Robert Pattinson, Zoë Kravitz, Paul Dano <br> <strong>Avaliação:</strong> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md py-2">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/X23XCFgdh2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md py-2">
+                                <article>
+                                    <h3>Doutor Estranho no Multiverso da Loucura</h3>
+                                    <p>Sinopse: O aguardado filme trata da jornada do Doutor Estranho rumo ao desconhecido. Além de receber ajuda de novos aliados místicos e outros já conhecidos do público, o personagem atravessa as realidades alternativas incompreensíveis e perigosas do Multiverso para enfrentar um novo e misterioso adversário. <br><br>
+                                    <strong>Diretor:</strong> Sam Raimi <strong>Roteiro:</strong> Michael Waldron, Jade Bartlett <strong>Estreia:</strong> 2022 <br> <strong>Elenco:</strong> Benedict Cumberbatch, Elizabeth Olsen, Xochitl Gomez <br> <strong>Avaliação:</strong> <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md py-2">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4jJxGh8jIKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md py-2">
+                                <article>
+                                    <h3>Sonic 2 - O Filme</h3>
+                                    <p>Sinopse: O Dr. Robotnik retorna à procura de uma esmeralda mística que tem o poder de destruir civilizações. Para detê-lo, Sonic se une a seu antigo parceiro, Tails, e parte em uma jornada para encontrar a joia antes que ela caia em mãos erradas. <br><br>
+                                    <strong>Diretor:</strong> Jeff Fowler <strong>Roteiro:</strong> Josh Miller, John Whittington, Patrick Casey <strong>Estreia:</strong> 2022 <br> <strong>Elenco:</strong> Idris Elba, Colleen O'Shaughnessey, Shemar Moore <br> <strong>Avaliação:</strong> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Em destaque-->
+        <section id="destaques">
+            <div class="row">
+                <h3 class="col-sm-9">Em destaque</h3>
+                <select class="form-control col-sm-3" name="categorias" id="select">
+                    <option value="0">Ação</option>
+                    <option value="1">Aventura</option>
+                    <option value="2">Ficção</option>
+                </select>
+            </div>
+            <!--CARDS-->
+            <div class="container mt-4">
+                <div class="row container">
+                    <div class="col-lg-6 row">
+                        <div class="col-sm-6 poster">
+                        </div>
+                        <div class="col-sm-6 poster">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 row">
+                        <div class="col-sm-6 poster">
+                        </div>
+                        <div class="col-sm-6 poster">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html"><button type="button" class="btn btn-dark float-right"><i class="bi bi-plus-lg"></i>Mais filmes</button></a>
+        </section>
+
+        <!--Últimas avaliações-->
+        <section id="avaliacoes">
+            <h3 class="mb-3">Últimas avaliações</h3>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <article>
+                        <i class="bi bi-person"></i><h6 style="display:inline">Júlio na gaita</h6>
+                        <p><strong>Avaliação:</strong> (Sonic 2 - O Filme)Pra quem jogou os games na era do Mega Drive/Dreamcast vai gostar muito do resultado final. O filme não é perfeito, mas deixa um sentimento de trabalho feito com carinho.<br> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article>
+                        <i class="bi bi-person"></i><h6 style="display:inline">Bicharada no vocal</h6>
+                        <p><strong>Avaliação:</strong> (Em Ritmo de Fuga)É excelente! Quando vi a primeira vez, adorei imenso, mas quando vi mais e mais, lentamente tornou-se no meu filme favorito de sempre! Tem boa ação, bom humor, intensidade e sobretudo, o melhor romance que já vi toda a minha vida.<br> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article>
+                        <i class="bi bi-person"></i><h6 style="display:inline">Rock rural</h6>
+                        <p><strong>Avaliação:</strong> (Shrek)Como eu amo Shrek. Uma das minhas animações favoritas. Uma paródia incrivel dos contos de fadas. Não tem como não amar. E as piadas são hilarantes!<br> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i></p>
+                    </article>
+                </div>
+            </div>
+            <button type="button" class="btn btn-dark float-right"><i class="bi bi-plus-lg"></i>Mais avaliações</button>
+        </section>
+
+        <!--Entrevistas & Making of-->
+        <section id="curiosidades" class="cor1">
+            <h3>Entrevistas & Making of</h3>
+            <div class="row">
+                <div class="col-lg-4 p-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J32eIIdZRZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <article>
+                        <h5>Crepúsculo</h5>
+                        <p><strong>Diretor:</strong> Catherine Hardwicke <br> <strong>Roteiro:</strong> Melissa Rosenberg <strong>Estreia:</strong> 2008</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 p-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jYk0WHcmrYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <article>
+                        <h5>Matrix</h5>
+                        <p><strong>Diretor:</strong> Lana Wachowski, Lilly Wachowski <br> <strong>Roteiro:</strong> Lana Wachowski, Lilly Wachowski <strong>Estreia:</strong> 1999</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 p-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WiaVytNI5zY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <article>
+                        <h5>Animais Fantásticos - Os Segredos de Dumbledore</h5>
+                        <p><strong>Diretor:</strong> David Yates <br> <strong>Roteiro:</strong> J. K. Rowling, Steve Kloves <strong>Estreia:</strong> 2022</p>
+                    </article>
+                </div>
+            </div>
+            <button type="button" class="btn btn-dark float-right"><i class="bi bi-plus-lg"></i>Mais curiosidades</button>
+        </section>
+
+        <!--Novidades/Sobre-->
+        <section id="novidades">
+            <!--Novidades-->
+            <div class="aside">
+                <h3>Novidades</h3>
+                <!-- Post 1 -->
+                <img src="img/noticia1.jpg" alt="img-post1">
+                <article>
+                    <h5 class="titulo">Doutor Estranho 2 mostra algo que não víamos no MCU há 14 anos</h5>
+                    <p>Doutor Estranho no Multiverso da Loucura é o filme mais importante na Fase Quatro do Universo Cinematográfico Marvel.</p>
+                </article>
+                <!-- Post 2 -->
+                <img src="img/noticia2.jpg" alt="img-post2">
+                <article>
+                    <h5 class="titulo">Thor 4: Fãs encontram erro que quase passou despercebido em primeiro trailer do filme</h5>
+                    <p>Agora, na prévia divulgada pela Marvel, o herói aparece com os dois olhos azuis novamente.</p>
+                </article>
+            </div>
+            <!--Sobre-->
+            <aside class="aside">
+                <h3>Sobre</h3>
+                <article>
+                    Portal de filmes criado para trabalho de Desenvolvimento de Interfaces Web.
+                </article>
+                <p><strong>Autor:</strong> Amanda Moura</p>
+                <h4>Redes Sociais</h4>
+                <a href=""><i class="bi bi-facebook"></i></a><a href=""><i class="bi bi-twitter"></i></a><a href=""><i class="bi bi-instagram"></i></a>
+            </aside>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer text-white">
+        <p class="text-center m-0 py-1">
+            Copyright © 2022 - Amanda Moura de Souza - <a href="https://getbootstrap.com/" class="text-white" target="blank">Bootstrap 4</a>
+        </p>
+        <img src="img/logo.png" alt="Logo">
+    </footer>
+</body>
+</html>
